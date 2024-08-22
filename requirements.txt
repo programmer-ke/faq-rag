@@ -1,0 +1,6 @@
+tqdm
+jupyterlab
+llama-cpp-python
+elasticsearch
+scikit-learn
+pandas
