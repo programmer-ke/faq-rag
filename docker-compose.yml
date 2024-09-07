@@ -5,7 +5,7 @@ services:
     image: ollama/ollama
     container_name: ollama
     volumes:
-      - ollama:/root/.ollama
+      - /home/krm/.ollama:/root/.ollama
     ports:
       - "11434:11434"
     restart: unless-stopped
@@ -21,6 +21,3 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
     restart: unless-stopped
-
-volumes:
-  ollama:
